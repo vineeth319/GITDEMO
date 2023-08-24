@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-17T21:09:13 IST" name="Default suite" finished-at="2023-08-17T21:09:13 IST" duration-ms="95">
+    <groups>
+      <group name="login">
+        <method signature="day1.homeloanlogin()[pri:1, instance:vineeth.day1@1fa268de]" name="homeloanlogin" class="vineeth.day1"/>
+      </group> <!-- login -->
+    </groups>
+    <test started-at="2023-08-17T21:09:13 IST" name="Default test" finished-at="2023-08-17T21:09:13 IST" duration-ms="95">
+      <class name="vineeth.day1">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:vineeth.day1@1fa268de]" started-at="2023-08-17T21:09:13 IST" name="loginTest" finished-at="2023-08-17T21:09:13 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'username' is required by @Test on method loginTest but has not been marked @Optional or defined
+in C:\Users\kvine\AppData\Local\Temp\testng-eclipse--1294294507\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'username' is required by @Test on method loginTest but has not been marked @Optional or defined
+in C:\Users\kvine\AppData\Local\Temp\testng-eclipse--1294294507\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:911)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="homeloanlogin()[pri:1, instance:vineeth.day1@1fa268de]" started-at="2023-08-17T21:09:13 IST" name="homeloanlogin" finished-at="2023-08-17T21:09:13 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeloanlogin -->
+        <test-method signature="homeloanlogaout()[pri:0, instance:vineeth.day1@1fa268de]" started-at="2023-08-17T21:09:13 IST" name="homeloanlogaout" finished-at="2023-08-17T21:09:13 IST" depends-on-methods="vineeth.day1.homeloanlogin" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeloanlogaout -->
+        <test-method signature="homeloanintrest()[pri:3, instance:vineeth.day1@1fa268de]" started-at="2023-08-17T21:09:13 IST" name="homeloanintrest" finished-at="2023-08-17T21:09:13 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeloanintrest -->
+      </class> <!-- vineeth.day1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
